@@ -23,6 +23,12 @@
     cursor: pointer;  
 }
 
+.desktopMenuListItem:hover {
+    color: gray;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid;
+}
+
 .desktopMenuBtn {
     background: white;
     color: black;
