@@ -3,9 +3,7 @@ import './intro.css';
 
 const Intro = () => {
   return (
-    <div>
-      
-    </div>
+    <div>intro</div>
   )
 }
 
