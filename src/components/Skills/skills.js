@@ -7,16 +7,32 @@ const Skills = () => {
   return (
     <section id='skills'>
       <span className="skillTitle">Who I am</span>
-      <span xlassName="skillDesc">I'm Arzu, a passionate Software Developer with a strong technical SEO background.
+      <span className="skillDesc">I'm Arzu, a passionate Software Developer with a strong technical SEO background. I'm passionate about building robust and scalable applications. Let's connect and create an amazing project together! 🚀</span>
+      <div className="skillBars">
+        <div className="skillBar">
+           <img src={SkillsImage} alt="skills" className="skillBarImg"/>
+           <div className="skillBarText">
+            <h2>Frontend</h2>
+            <p></p>
+           </div>
+           </div>
 
-Tech Stack:
+           <div className="skillBar">
+           <img src={SkillsImage} alt="skills" className="skillBarImg"/>
+           <div className="skillBarText">
+            <h2>Backend</h2>
+            <p></p>
+           </div>
+           </div>           
 
-Frontend: HTML, CSS, JavaScript, TypeScript, Vue.js, React.js⚛️
-Backend: Node.js, Testing with Jest 🃏
-Database: MongoDB, MySQL🐬
-Containerization: Docker 🐳
-I'm passionate about building robust and scalable applications. Let's connect and create an amazing project together! 🚀</span>
-   
+           <div className="skillBar">
+           <img src={SkillsImage} alt="skills" className="skillBarImg"/>
+           <div className="skillBarText">
+            <h2>Database</h2>
+            <p></p>
+           </div>
+           </div>       
+      </div>        
     </section>
   );
 }
