@@ -22,17 +22,15 @@ const Navbar = () => {
         }}>
                 <img src={contactImg} alt="" className="desktopMenuImg" />Contact Me</button>
 
-                <img src={menu} alt="Menu" className='mobMenu' />
-                <div className="navMenu">
-                <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(!showMenu)}>Home</Link>
-                <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={()=>setShowMenu(!showMenu)} >Who I Am?</Link>
-                <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={()=>setShowMenu(!showMenu)}>My Projects</Link>
-                <Link activeClass='active' to='achievements' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={()=>setShowMenu(!showMenu)}>My Achievements</Link>
-                <Link activeClass='active' to='blog' spy={true} smooth={true} offset={-50} duration={500} className="listItem"onClick={()=>setShowMenu(!showMenu)}>My Blog</Link>
-                <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500} className="listItem"onClick={()=>setShowMenu(!showMenu)}>Contact</Link>  
+                <img src={menu} alt="Menu" className='mobMenu'onClick={()=>setShowMenu(!showMenu)} />
+                <div className="navMenu" style={{display: showMenu? 'flex':'none'}}>
+                <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Home</Link>
+                <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={()=>setShowMenu(false)} >Who I Am?</Link>
+                <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>My Projects</Link>
+                <Link activeClass='active' to='achievements' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>My Achievements</Link>
+                <Link activeClass='active' to='blog' spy={true} smooth={true} offset={-50} duration={500} className="listItem"onClick={()=>setShowMenu(false)}>My Blog</Link>
+                <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500} className="listItem"onClick={()=>setShowMenu(false)}>Contact</Link>  
             </div>
-
-
         </nav>
     )
 }
