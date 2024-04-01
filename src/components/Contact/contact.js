@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import './contact.css';
 import Award from '../../assets/award.png';
+import twitterIcon from '../../assets/twitter.png';
 import YoutubeIcon from '../../assets/youtube.png';
 import emailjs from '@emailjs/browser';
 
@@ -45,7 +46,7 @@ const Contact = () => {
               <textarea className='msg' name="message"rows="5" placeholder='Your Message'></textarea>
               <button type='submit' value='Send' className="submitBtn">Submit</button>
               <div className="links">
-                <img src={YoutubeIcon} alt="Youtube" className="link" />
+                <img src={YoutubeIcon} alt="Youtube" className="link" />              
               </div>        
        </form>
       </div>
