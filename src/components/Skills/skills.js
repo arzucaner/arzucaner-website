@@ -13,10 +13,9 @@ const Skills = () => {
            <img src={SkillsImage} alt="skills" className="skillBarImg"/>
            <div className="skillBarText">
             <h2>Frontend</h2>
-            <p></p>
+            <p>Loem</p>
            </div>
-           </div>
-
+          </div>
            <div className="skillBar">
            <img src={SkillsImage} alt="skills" className="skillBarImg"/>
            <div className="skillBarText">

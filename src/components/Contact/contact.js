@@ -29,9 +29,9 @@ const Contact = () => {
     <section id="contactPage">
       <div id="achievements">
            <h1 className="contactPageTitle">My Achievements</h1>
-           <p className="achievementDesc">
+           <span className="achievementDesc">
             Lorem
-           </p>
+           </span>
            <div className="achievementImgs">
             <img src={Award} alt="achievement" className="achievementImg" />
 
@@ -41,8 +41,8 @@ const Contact = () => {
         <h1 className="contactPageTitle">Contact Me</h1>
         <span className="contactDesc"> Please fill out the form below to discuss any work opportunities.</span>
         <form className='contactForm' ref={form} onSubmit={sendEmail}>
-              <input type="text" className="name" placeholder='Your Name' name='your_name'/>
-              <input type="email" className="email" placeholder='Your Email' name='your_email'/>
+              <input type="text" className="name" placeholder='Your Name' name='from_name'/>
+              <input type="email" className="email" placeholder='Your Email' name='from_email'/>
               <textarea className='msg' name="message"rows="5" placeholder='Your Message'></textarea>
               <button type='submit' value='Send' className="submitBtn">Submit</button>
               <div className="links">
